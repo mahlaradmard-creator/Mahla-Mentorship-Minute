@@ -19,7 +19,7 @@ const EPISODES = [{
   date: "2026-09",
   duration: "20:34",
   video: "videos/Mahla.Mentorship.Minute.epi02.mp4",
-  poster: "posters/EPISODE.02.jpg",
+  poster: "posters/episode02new.jpg",
   takeaways: [
     "Start with a clear and important question",
     "Make the specific aims focused and easy to follow",
