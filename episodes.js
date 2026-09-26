@@ -11,7 +11,22 @@
 //  action:  the one "what can I do tomorrow?" step
 // ============================================================
 
-const EPISODES = [
+const EPISODES = [{
+  number: 2,
+  question: "What is the key to a successful grant submission?",
+  mentor: "Richard Edden, PhD",
+  mentorRole: "Professor of Radiology, Johns Hopkins University School of Medicine; Radiology Postdoctoral Program Director",
+  date: "2026-09",
+  duration: "20:34",
+  video: "https://github.com/mahlaradmard-creator/Mahla-Mentorship-Minute/releases/download/episode-02/Mahla.Mentorship.Minute.episode02.mp4",
+  poster: "",
+  takeaways: [
+    "Start with a clear and important question",
+    "Make the specific aims focused and easy to follow",
+    "Give reviewers confidence that the project is feasible"
+  ],
+  action: "Turn your idea into a clear specific aims page"
+},
   {
     number: 1,
     question: "What makes the optimal mentee?",
