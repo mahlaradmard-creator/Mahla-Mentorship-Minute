@@ -18,7 +18,7 @@ const EPISODES = [{
   mentorRole: "Professor of Radiology, Johns Hopkins University School of Medicine; Radiology Postdoctoral Program Director",
   date: "2026-09",
   duration: "20:34",
-  video: "https://github.com/mahlaradmard-creator/Mahla-Mentorship-Minute/releases/download/episode-02/Mahla.Mentorship.Minute.episode02.mp4",
+  video: "videos/Mahla.Mentorship.Minute.epi02.mp4",
   poster: "",
   takeaways: [
     "Start with a clear and important question",
