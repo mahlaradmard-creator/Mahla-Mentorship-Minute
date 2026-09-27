@@ -21,9 +21,9 @@ const EPISODES = [{
   video: "videos/Mahla.Mentorship.Minute.epi02.mp4",
   poster: "posters/episode02new.jpg",
   takeaways: [
-    "Start with a clear and important question",
-    "Make the specific aims focused and easy to follow",
-    "Give reviewers confidence that the project is feasible"
+    "Submit and commit.",
+    "Celebrate each step and use feedback as part of the learning process.",
+    "Choose projects and topics you genuinely enjoy."
   ],
   action: "Turn your idea into a clear specific aims page"
 },
