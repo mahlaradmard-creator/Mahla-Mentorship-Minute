@@ -12,6 +12,21 @@
 // ============================================================
 
 const EPISODES = [{
+  number: 3,
+  question: "What makes a great mentor?",
+  mentor: "Jennifer Haythornthwaite, PhD",
+  mentorRole: "Professor of Psychiatry and Behavioral Sciences, Johns Hopkins University School of Medicine",
+  date: "2026-10",
+  duration: "10:28",
+  video: "videos/episode3.mp4",
+  poster: "posters/episode 3.jpg",
+  takeaways: [
+    "Know your mentee: Understand their goals and needs.",
+    "Think ahead: Anticipate challenges and opportunities.",
+    "Be a sponsor: Advocate and open doors."
+  ],
+  action: "Know your mentee and help open doors"
+},{
   number: 2,
   question: "What is the key to a successful grant submission?",
   mentor: "Richard Edden, PhD",
@@ -35,7 +50,7 @@ const EPISODES = [{
     date: "2026-09",
     duration: "12:39",
     video: "videos/episode 01.mp4",
-    poster: "posters/episode01.jpg",
+    poster: "posters/episode 1.jpg",
     takeaways: [
       "Be proactive about your career",
       "Be organized before, during and after your mentorship session",
