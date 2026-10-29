@@ -11,7 +11,25 @@
 //  action:  the one "what can I do tomorrow?" step
 // ============================================================
 
-const EPISODES = [{
+const EPISODES = [
+
+{
+  number: 4,
+  question: "What are the biggest rewards and challenges of building a career as an educator in academia?",
+  mentor: "Rohini Nadgir, MD",
+  mentorRole: "Associate Professor of Radiology and Radiological Science, Johns Hopkins University School of Medicine",
+  date: "2026-10",
+  duration: "11:00",
+  video: "videos/episode 4.mp4",
+  poster: "posters/episode 4.jpg",
+  takeaways: [
+    "Teaching is a two-way exchange. Keep learning from your trainees.",
+    "Education can reach learners far beyond your own institution.",
+    "Make your contributions as an educator visible and document their impact."
+  ],
+  action: "Choose one teaching opportunity you enjoy and start documenting its impact."
+},
+{
   number: 3,
   question: "What makes a great mentor?",
   mentor: "Jennifer Haythornthwaite, PhD",
