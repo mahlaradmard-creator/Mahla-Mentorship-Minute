@@ -66,8 +66,8 @@ const EPISODES = [
     mentor: "David M. Yousem, MD, MBA",
     mentorRole: "Professor of Radiology; Johns Hopkins University School of Medicine, former Associate Dean of Faculty Development",
     date: "2026-09",
-    duration: "12:39",
-    video: "videos/episode 01.mp4",
+    duration: "11:06",
+    video: "videos/episode 1.mp4",
     poster: "posters/episode 1.jpg",
     takeaways: [
       "Be proactive about your career",
