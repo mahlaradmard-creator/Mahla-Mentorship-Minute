@@ -221,7 +221,7 @@
   }));
 
   const want = (location.hash.match(/^#ep-(\d+)$/) || [])[1];
-  play(eps.find(x => x.number === +want) || eps[0], false);
+  play(eps.find(x => x.number === +want) || eps[0], Boolean(want));
 })();
 </script>
 </body>
