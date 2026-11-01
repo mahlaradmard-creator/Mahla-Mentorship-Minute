@@ -50,8 +50,8 @@ const EPISODES = [
   mentor: "Richard Edden, PhD",
   mentorRole: "Professor of Radiology, Johns Hopkins University School of Medicine; Radiology Postdoctoral Program Director",
   date: "2026-09",
-  duration: "20:34",
-  video: "videos/Mahla.Mentorship.Minute.epi02.mp4",
+  duration: "17:00",
+  video: "videos/episode 2.mp4",
   poster: "posters/episode02new.jpg",
   takeaways: [
     "Submit and commit.",
