@@ -14,6 +14,22 @@
 const EPISODES = [
 
 {
+number: 5,
+question: "How do you keep growing in your own career while leading a division?",
+mentor: "Haris Sair, MD",
+mentorRole: "Professor of Radiology and Radiological Science and Executive Vice Chair of Radiology, Johns Hopkins University School of Medicine",
+date: "2026-11",
+duration: "22:21",
+video: "videos/episode 5.mp4",
+poster: "posters/episode 5.jpg",
+takeaways: [
+"Do work you enjoy and do it well, even before you know where it might lead.",
+"Give people time to think through their own answer before offering yours.",
+"Find good people to learn from and work with."
+],
+action: "The next time someone asks for advice, try asking, “What are you leaning toward, and why?”"
+},
+{
   number: 4,
   question: "What are the biggest rewards and challenges of building a career as an educator in academia?",
   mentor: "Rohini Nadgir, MD",
