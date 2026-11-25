@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mahla's Mentorship Minute</title>
+<!-- Episode share metadata -->
 <meta name="description" content="Short mentorship conversations for radiology trainees and early-career faculty. One mentor, one question, three takeaways, one action.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -107,7 +108,7 @@
 
 <header>
   <div class="wrap bar">
-    <a class="brand" href="#">Mahla's <em>Mentorship Minute</em></a>
+    <a class="brand" href="./">Mahla's <em>Mentorship Minute</em></a>
     <nav>
       <a href="#episodes">Episodes</a>
       <a href="#about">About the series</a>
@@ -203,24 +204,21 @@
       : '<video controls preload="metadata" playsinline'+(ep.poster?' poster="'+esc(ep.poster)+'"':'')+'><source src="'+esc(ep.video)+'" type="video/mp4">Your browser cannot play this video. <a href="'+esc(ep.video)+'">Download it</a> instead.</video>';
     document.querySelectorAll('.ep').forEach(a => a.classList.toggle('playing', +a.dataset.n === ep.number));
     document.title = 'Ep. '+ep.number+' — Mahla\'s Mentorship Minute';
-    history.replaceState(null, '', '#ep-'+ep.number);
+    history.replaceState(null, '', 'episode-'+ep.number+'.html');
     if (scroll) $('now').scrollIntoView({behavior:'smooth', block:'start'});
   }
 
   $('eps').innerHTML = eps.map(ep => `
-    <li><a class="ep" href="#ep-${ep.number}" data-n="${ep.number}">
+    <li><a class="ep" href="episode-${ep.number}.html" data-n="${ep.number}">
       <div class="thumb">${ep.poster ? '<img src="'+esc(ep.poster)+'" alt="">' : '<div class="ph">'+ep.number+'</div>'}<span class="dur">${esc(ep.duration)}</span></div>
       <h3>${todo(ep.question)}</h3>
       <p>Episode ${ep.number} · ${esc(ep.mentor)}</p>
     </a></li>`).join('');
   $('eps-count').textContent = eps.length + (eps.length === 1 ? ' episode' : ' episodes');
 
-  document.querySelectorAll('.ep').forEach(a => a.addEventListener('click', e => {
-    e.preventDefault();
-    play(eps.find(x => x.number === +a.dataset.n), true);
-  }));
-
-  const want = (location.hash.match(/^#ep-(\d+)$/) || [])[1];
+  const oldLink = location.hash.match(/^#ep-(\d+)$/);
+  const episodePage = location.pathname.match(/\/episode-(\d+)\.html$/);
+  const want = oldLink?.[1] || episodePage?.[1];
   play(eps.find(x => x.number === +want) || eps[0], Boolean(want));
 })();
 </script>
