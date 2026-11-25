@@ -19,7 +19,7 @@ question: "How do you keep growing in your own career while leading a division?"
 mentor: "Haris Sair, MD",
 mentorRole: "Professor of Radiology and Radiological Science and Executive Vice Chair of Radiology, Johns Hopkins University School of Medicine",
 date: "2026-11",
-duration: "22:21",
+duration: "21:58",
 video: "videos/episode 5.mp4",
 poster: "posters/episode 5.jpg",
 takeaways: [
