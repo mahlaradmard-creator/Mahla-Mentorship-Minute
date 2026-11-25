@@ -203,8 +203,8 @@
       ? '<iframe src="https://www.youtube-nocookie.com/embed/'+yt+'?rel=0" title="Episode '+ep.number+'" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>'
       : '<video controls preload="metadata" playsinline'+(ep.poster?' poster="'+esc(ep.poster)+'"':'')+'><source src="'+esc(ep.video)+'" type="video/mp4">Your browser cannot play this video. <a href="'+esc(ep.video)+'">Download it</a> instead.</video>';
     document.querySelectorAll('.ep').forEach(a => a.classList.toggle('playing', +a.dataset.n === ep.number));
-    document.title = 'Ep. '+ep.number+' — Mahla\'s Mentorship Minute';
-    history.replaceState(null, '', 'episode-'+ep.number+'.html');
+    if (oldLink) history.replaceState(null, '', 'episode-'+ep.number+'.html');
+    if (oldLink || episodePage) document.title = "Ep. "+ep.number+" — Mahla's Mentorship Minute";
     if (scroll) $('now').scrollIntoView({behavior:'smooth', block:'start'});
   }
 
